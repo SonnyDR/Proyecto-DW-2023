@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Conversor de tiempo</title>
+</head>
+<body class="bg-Success">
+
+    <div class="container-sm">
+
+        <div class="row align-items-center justify-content-center vh-100 ">
+
+            <div class="col-sm-12 p-0">
+                
+                <form action="" class="box-form p-5 bg-secondary ">
+                    <h1 class="fw-bold">CONVERSOR</h1>
+
+                    <label class="form-label text-white ">Ingrese un numero a convertir y la unidad</label>
+                    <div class="input-group inp-shw-ale ">
+                        <input type="number" class="form-control w-50" id="numeroIngresado" placeholder="Ingrese el numero" aria-label="Username" aria-describedby="basic-addon1">
+                        <select class="form-select" id="op1" aria-label="Example select with button addon">
+                          <option selected>Unidad</option>
+                          <option value="s1">Segundos(s)</option>
+                          <option value="m1">Minuto(min)</option>
+                          <option value="h1">Hora(h)</option>
+                          <option value="d1">Dia(d)</option>
+                        </select>
+                      </div>
+
+                      <div class="my-3">
+                        <label class="form-label text-white ">Selecione la unidad a la que lo quiere convertir</label>
+                        <select class="form-select inp-shw-ale " id="op2" aria-label="Example select with button addon">
+                            <option selected>Unidad a convertir</option>
+                            <option value="s2">Segundos(s)</option>
+                            <option value="m2">Minuto(min)</option>
+                            <option value="h2">Hora(h)</option>
+                            <option value="d2">Dia(d)</option>
+                          </select>
+                      </div>
+
+                      
+                      <label class="form-label text-white ">El resultado de su conversion es:</label>
+                      <div class="input-group inp-shw-ale">
+                        <span class="input-group-text" id="basic-addon1">Resultado</span>
+                        <input type="text" value="" id="mostrar" class="form-control w-25" placeholder="Resultado de conversion" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                      </div>
+
+                      <input class="btn btn-primary mt-4 w-100 bg-danger inp-shw-ale" id="botonConvertir" type="button" value="Convertir">
+                    
+                </form>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/conversion.js"></script>
+</body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Conversor de tiempo</title>
 </head>
 <body class="bg-Success">
@@ -19,7 +20,7 @@
 
                     <label class="form-label text-white ">Ingrese un numero a convertir y la unidad</label>
                     <div class="input-group inp-shw-ale ">
-                        <input type="number" class="form-control w-50" id="numeroIngresado" placeholder="Ingrese el numero" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="number" min="0" class="form-control w-50" id="numeroIngresado" placeholder="Ingrese el numero" aria-label="Username" aria-describedby="basic-addon1">
                         <select class="form-select" id="op1" aria-label="Example select with button addon">
                           <option selected>Unidad</option>
                           <option value="s1">Segundos(s)</option>
@@ -47,7 +48,13 @@
                         <input type="text" value="" id="mostrar" class="form-control w-25" placeholder="Resultado de conversion" aria-label="Username" aria-describedby="basic-addon1" disabled>
                       </div>
 
-                      <input class="btn btn-primary mt-4 w-100 bg-danger inp-shw-ale" id="botonConvertir" type="button" value="Convertir">
+                      <div class="input-group">
+                        <input class="btn btn-primary mt-4 w-75 bg-danger inp-shw-ale" id="botonConvertir" type="button"  value="Convertir">
+                        <button class="btn btn-primary w-25 mt-4 bg-dark inp-shw-ale btn-clear" id="botonClear" type="button">
+                          <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                        </button>
+                        
+                      </div>
                     
                 </form>
                 
